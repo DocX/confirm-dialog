@@ -1,0 +1,53 @@
+{**
+ * Confirmation dialog with dynamic signals
+ *
+ * Copyright (c) 2009 Lukáš Doležal @ GDMT (dolezal@gdmt.cz)
+ *
+ * This source file is subject to the "General Public Licenee" (GPL)
+ *
+ * @copyright  Copyright (c) 2009 Lukáš Doležal (dolezal@gdmt.cz)
+ * @license    http://www.gnu.org/copyleft/gpl.html  General Public License
+ * @link       http://nettephp.com/cs/extras/confirmation-dialog
+ * @package    ConfirmationDialog
+ * @subpackage Example
+ *}
+
+ <h1>ConfirmationDialog Demonstration</h1>
+
+ <p><em>Nette Framework component providing confirmation dialog</em></p>
+
+ <p><em>Copyright (c) 2009 Lukáš Doležal @ GDMT (dolezal@gdmt.cz)</em></p>
+
+<div class="col">
+<div style="margin: 0 15px">
+<h3>With AJAX, hiding links</h3>
+
+@{widget confirmForm}
+
+{snippet links}
+{if $showAjaxLinks}
+<p><a href="{link confirmForm:confirmEnable! id => 10}" class="ajax">Enable user</a></p>
+<p><a href="{link confirmForm:confirmDelete! id => 10}" class="ajax">Delete user</a> (sample of nested questions)</p>
+
+<p><a href="{link confirmForm:confirmInfinite! num => 1}" class="ajax">Infinite question</a></p>
+{/if}
+{/snippet}
+</div>
+</div>
+
+<div class="col">
+
+<div style="margin: 0 15px">
+<h3>Without AJAX, changed style</h3>
+
+<a name="nonajaxform"></a>
+@{widget nonajaxForm}
+
+<p><a href="{link nonajaxForm:confirmEnable!#nonajaxform id => 10}" >Enable user</a></p>
+<p><a href="{link nonajaxForm:confirmDelete! id => 10}">Delete user</a> (sample of nested questions)</p>
+
+<p><a href="{link nonajaxForm:confirmInfinite! num => 1}" >Infinite question</a></p>
+</div>
+</div>
+
+<div class="clear"></div>

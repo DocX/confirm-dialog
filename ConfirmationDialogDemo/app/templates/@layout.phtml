@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>ConfirmationDialog Demo</title>
+
+	<script src="{$baseUri}js/jquery.js" type="text/javascript"></script>
+	<script src="{$baseUri}js/jquery.livequery.js" type="text/javascript"></script>
+	<script src="{$baseUri}js/jquery.nette.js" type="text/javascript"></script>
+	<script src="{$baseUri}js/jquery.ajaxform.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="{$baseUri}css/datagrid.css" type="text/css" />
+	<link rel="stylesheet" media="screen,projection,tv" href="{$baseUri}css/screen.css" type="text/css" />
+	<link rel="stylesheet" media="screen,projection,tv" href="{$baseUri}css/confirmform.css" type="text/css" />
+</head>
+
+<body>
+
+	{snippet}
+	{foreach $flashes as $flash}<div class="flash {$flash->type}">{$flash->message}</div>{/foreach}
+	{/snippet}
+
+	@{include $content}
+
+</body>
+</html>

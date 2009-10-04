@@ -1,0 +1,93 @@
+
+/**
+ * Confirmation dialog with dynamic signals
+ *
+ * Copyright (c) 2009 Lukáš Doležal @ GDMT (dolezal@gdmt.cz)
+ *
+ * This source file is subject to the "General Public Licenee" (GPL)
+ *
+ * @copyright  Copyright (c) 2009 Lukáš Doležal (dolezal@gdmt.cz)
+ * @license    http://www.gnu.org/copyleft/gpl.html  General Public License
+ * @link       http://nettephp.com/cs/extras/confirmation-dialog
+ * @package    ConfirmationDialog
+ * @subpackage Example
+ */
+ 
+div.confirm_dialog
+{
+	position:fixed;
+
+	left:30%;
+	top:30%;
+	width: 250px;
+
+	padding:10px;
+
+	background-color:#FFFFCC;
+
+	border: 5px solid #cccc99;
+	-moz-border-radius: 5px;
+}
+
+div.static_dialog.important
+{
+	background-color: #ffcccc !important;
+	border-color: #663333 !important;
+}
+
+div.static_dialog
+{
+
+	padding:10px;
+
+	background-color:#FFFFCC;
+
+	border: 5px solid #cccc99;
+	-moz-border-radius: 5px;
+}
+
+div.static_dialog p
+{
+	text-align: center;
+
+}
+
+div.static_dialog form table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.static_dialog.second
+{
+	background: #eee;
+	border-color:  #ccc;
+}
+
+div.static_dialog.second p
+{
+	font-family: "georgia", serif;
+	font-style:italic;
+	font-weight: bold;
+	color: #333;
+}
+
+input.yesbut, input.nobut {
+	border:  3px solid;
+	font-size: 110%;
+	-moz-border-radius: 5px;
+}
+
+
+input.yesbut
+{
+	background: #99ff99;
+	border-color:#eeffee;
+	color: darkgreen;
+}
+input.nobut
+{
+	background: #ff9999;
+	border-color:#ffeeee;
+	color: darkred;
+}

@@ -1,0 +1,16 @@
+ConfirmationDialog
+==================
+
+ConfirmationDialog je komponenta umožňující pohodlné ošetření akcí, vyžadujících zvýšenou pozornost a potvrzení uživatele. Díky revoluční schoponosti dynamických událostí ji lze snadno použít i v jiných komponentách jako je DataGrid. Jako samozřejmost je kompletní podpora AJAXu.
+
+Odkazy
+------
+Demo: http://gdmt.cz/net te-components/confirm-dialog-demo/
+Diskuse: http://forum.net te.org/cs/2636-confirmationdialog
+
+
+Autoři
+-----
+(c) 2009-2010, Lukáš Doležal
+
+

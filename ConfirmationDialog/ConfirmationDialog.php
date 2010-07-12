@@ -21,7 +21,6 @@
 //use \Nette\Web\Html;
 //use \Nette\Environment;
 //
-//
 
 class ConfirmationDialog extends Control
 {

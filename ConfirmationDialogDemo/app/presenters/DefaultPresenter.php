@@ -14,8 +14,9 @@
  * @subpackage Example
  */
 
-use \Nette\Application\Presenter;
-use \Nette\Web\Html;
+
+//use \Nette\Application\Presenter;
+//use \Nette\Web\Html;
 
 class DefaultPresenter extends Presenter
 {
@@ -34,7 +35,7 @@ class DefaultPresenter extends Presenter
 			'delete',
 			array($this, 'confirmedDelete'),
 			function ($dialog, $params) {
-				return sprintf('Do you realy want to delete user \'%s\'?', $params['id']);
+				return sprintf('Do you really want to delete user \'%s\'?', $params['id']);
 			});
 
 		$form->addConfirmer(
@@ -43,14 +44,14 @@ class DefaultPresenter extends Presenter
 			function ($dialog, $params) {
 				// change class of question element
 				$dialog->dialogClass .= ' important';
-				return sprintf('Do you realy want to delete user \'%s\' and all articles connected with him?', $params['id']);
+				return sprintf('Do you really want to delete user \'%s\' and all articles connected with him?', $params['id']);
 			});
 
 		$form->addConfirmer(
 			'enable',
 			array($this, 'confirmedEnable'),
 			function ($dialog, $params) {
-				return sprintf('Do you realy want to enable user \'%s\'?', $params['id']);
+				return sprintf('Do you really want to enable user \'%s\'?', $params['id']);
 			});
 
 		$form->addConfirmer(
@@ -77,7 +78,7 @@ class DefaultPresenter extends Presenter
 			'delete',
 			array($this, 'confirmedDelete'),
 			function ($dialog, $params) {
-				return sprintf('Do you realy want to delete user \'%s\'?', $params['id']);
+				return sprintf('Do you really want to delete user \'%s\'?', $params['id']);
 			});
 
 		$form->addConfirmer(
@@ -86,14 +87,14 @@ class DefaultPresenter extends Presenter
 			function ($dialog, $params) {
 				// change class of question element
 				$dialog->dialogClass .= ' important';
-				return sprintf('Do you realy want to delete user \'%s\' and all articles connected with him?', $params['id']);
+				return sprintf('Do you really want to delete user \'%s\' and all articles connected with him?', $params['id']);
 			});
 
 		$form->addConfirmer(
 			'enable',
 			array($this, 'confirmedEnable'),
 			function ($dialog, $params) {
-				return sprintf('Do you realy want to enable user \'%s\'?', $params['id']);
+				return sprintf('Do you really want to enable user \'%s\'?', $params['id']);
 			});
 
 		$form->addConfirmer(

@@ -22,6 +22,16 @@
 //use \Nette\Environment;
 //
 
+if(!function_exists('lcfirst'))
+{
+    function lcfirst($string)
+    {
+        $string{0} = strtolower($string{0});
+        return $string;
+    }
+}
+
+
 class ConfirmationDialog extends Control
 {
 
@@ -160,7 +170,7 @@ class ConfirmationDialog extends Control
 		if (!is_callable($methodCallback))
 			throw new InvalidArgumentException('$methodCallback must be callable.');
 
-		if (!is_callable($question) && !\is_string($question))
+		if (!is_callable($question) && !is_string($question))
 			throw new InvalidArgumentException('$question must be callback or string.');
 
 		$this->confirmationHandlers[$name] = array(
@@ -237,8 +247,10 @@ class ConfirmationDialog extends Control
 		$values = $form->getValues();
 		if (!isset($this->session->{$values['token']}))
 		{
-			//TODO should be here some notification?
-			$this->presenter->flashMessage(self::$_string['expired']);
+			if (self::$_strings['expired'] != '')
+			{
+				$this->presenter->flashMessage(self::$_strings['expired']);
+			}
 			$this->invalidateControl();
 			return;
 		}

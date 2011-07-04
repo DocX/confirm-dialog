@@ -3,12 +3,12 @@
 /**
  * Confirmation dialog with dynamic signals
  *
- * Copyright (c) 2009 Lukáš Doležal @ GDMT (dolezal@gdmt.cz)
+ * Copyright (c) 2009-2011 Lukáš Doležal @ GDMT (dolezal@gdmt.cz)
  *
- * This source file is subject to the "General Public Licenee" (GPL)
+ * This source file is subject to the "GNU Lesser General Public Licenee" (LGPL)
  *
  * @copyright  Copyright (c) 2009 Lukáš Doležal (dolezal@gdmt.cz)
- * @license    http://www.gnu.org/copyleft/gpl.html  General Public License
+ * @license    http://www.gnu.org/copyleft/lgpl.html  GNU Lesser General Public License
  * @link       http://nettephp.com/cs/extras/confirmation-dialog
  * @package    ConfirmationDialog
  */

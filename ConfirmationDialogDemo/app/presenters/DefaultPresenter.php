@@ -1,14 +1,15 @@
 <?php
 
 /**
- * Confirmation dialog example
+ * Confirmation dialog with dynamic signals
+ * Example presenter
  *
  * Copyright (c) 2009 Lukáš Doležal @ GDMT (dolezal@gdmt.cz)
  *
- * This source file is subject to the "General Public Licenee" (GPL)
+ * This source file is subject to the "Creative Commons CC-BY 3.0" license
  *
  * @copyright  Copyright (c) 2009 Lukáš Doležal (dolezal@gdmt.cz)
- * @license    http://www.gnu.org/copyleft/gpl.html  General Public License
+ * @license    http://creativecommons.org/licenses/by/3.0  Creative Commons CC-BY
  * @link       http://nettephp.com/cs/extras/confirmation-dialog
  * @package    ConfirmationDialog
  * @subpackage Example

@@ -39,7 +39,7 @@ class ConfirmationDialog extends Control
     public static $_strings = array(
 		'yes' => 'Yes',
 		'no' => 'No',
-		'expired' => 'Confirmation token expires. Please try action again.',
+		'expired' => 'Confirmation token has expired. Please try action again.',
 	);
 
 	/** @var \Nette\Application\AppForm */

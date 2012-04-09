@@ -16,9 +16,9 @@
 
 //UNCOMMENT IF YOU ARE USING NETTE WITH NAMESPACES 
 //
-//use \Nette\Application\Control;
-//use \Nette\Application\AppForm;
-//use \Nette\Web\Html;
+//use \Nette\Application\UI\Control;
+//use \Nette\Application\UI\Form;
+//use \Nette\Utils\Html;
 //use \Nette\Environment;
 //
 
@@ -42,7 +42,7 @@ class ConfirmationDialog extends Control
 		'expired' => 'Confirmation token has expired. Please try action again.',
 	);
 
-	/** @var \Nette\Application\AppForm */
+	/** @var \Nette\Application\Form */
 	private $form;
 
 	/** @var Nette\Web\Html Confirmation question */
@@ -64,7 +64,7 @@ class ConfirmationDialog extends Control
 	{
 		parent::__construct($parent, $name);
 
-		$this->form = new AppForm($this, 'form');
+		$this->form = new Form($this, 'form');
 
 		$this->form->addSubmit('yes', self::$_strings['yes'])
 			->onClick[] = array($this, 'confirmClicked');
@@ -308,9 +308,9 @@ class ConfirmationDialog extends Control
 	 * Template factory.
 	 * @return ITemplate
 	 */
-	protected function createTemplate()
+	protected function createTemplate($class = NULL)
 	{
-		$template = parent::createTemplate();
+		$template = parent::createTemplate($class);
 		// Nette filter is registered by default in Control.
 		$template->setFile(dirname(__FILE__) . '/form.phtml');
 		return $template;
